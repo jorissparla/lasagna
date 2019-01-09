@@ -7,9 +7,10 @@ const PostLayout = props => {
   console.log('Props', props.pageContext);
 
   return (
-    <Layout>
+    <Layout location={props.location}>
       <div>
         <h1>{markdownRemark.frontmatter.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
       </div>
     </Layout>
   );
@@ -18,8 +19,8 @@ const PostLayout = props => {
 export default PostLayout;
 
 export const query = graphql`
-  query PostQuery {
-    markdownRemark(frontmatter: { slug: { eq: "/firstpost" } }) {
+  query PostQuery($slug: String!) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
         title

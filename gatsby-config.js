@@ -44,13 +44,7 @@ module.exports = {
         name: 'images',
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/standen`,
-        name: 'standen',
-      },
-    },
+
     {
       resolve: `gatsby-source-graphql`,
       options: {

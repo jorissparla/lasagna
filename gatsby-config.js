@@ -44,6 +44,25 @@ module.exports = {
         name: 'images',
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/standen`,
+        name: 'standen',
+      },
+    },
+    {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        fieldName: `cms`,
+        url: `https://api.graph.cool/simple/v1/cj8im0xou028m0165lk76wsvj`,
+        typeName: `graphcool`,
+        headers: {
+          Authorization: `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDA0MTAwMjcsImlhdCI6MTUzNzgxODAyNywicHJvamVjdElkIjoiY2o4aW0weG91MDI4bTAxNjVsazc2d3N2aiIsInVzZXJJZCI6ImNqOGltdnozZ2RrcTQwMTIwcGhhZHN1NGUiLCJhdXRoRGF0YSI6eyJlbWFpbCI6ImpvcmlzLnNwYXJsYUBnbWFpbC5jb20ifSwibW9kZWxOYW1lIjoiVXNlciJ9.4Ggst2Ojz2sP2QhMMB4GfMQfwmpO3bPd_Xzo1akepCc`,
+        },
+        refetchInterval: 60,
+      },
+    },
     'gatsby-transformer-remark',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sharp',

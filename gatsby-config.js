@@ -3,6 +3,7 @@ module.exports = {
     title: `Joris Development Blog`,
     description: `My most interesting findings here`,
     author: `@gatsbyjs`,
+    siteUrl: 'https://blog.sparlas.nl/',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -60,7 +61,9 @@ module.exports = {
     'gatsby-transformer-remark',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-sitemap',
     'gatsby-transformer-sharp',
+    `gatsby-plugin-netlify-cms`,
     'gatsby-plugin-netlify',
   ],
 };

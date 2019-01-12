@@ -1,7 +1,7 @@
 ---
-slug: '/firstpost'
+slug: '/schemastitching'
 date: '2019-01-12'
-title: 'Our first Post'
+title: 'Schema Stitching with GraphQL'
 ---
 
 # Schema Stitching with GraphQL

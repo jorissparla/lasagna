@@ -4,8 +4,6 @@ date: '2019-01-12'
 title: 'Schema Stitching with GraphQL'
 ---
 
-# Schema Stitching with GraphQL
-
 Just found this is a really cool feature and allows you to even include remote schemas in your GraphQL server, or even combine multiple remote schema into you own server!!
 
 ---

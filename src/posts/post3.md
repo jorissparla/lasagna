@@ -1,13 +1,13 @@
 ---
-slug: '/thirdpost'
-date: '2019-01-18'
-title: 'Our third Post'
+slug: '/gqlgen'
+date: '2019-01-13'
+title: 'What is GraphQL Code Generator?'
 ---
 
-# Hallo
+I recently came across this and have started to play around with it.
 
-Letterpress affogato humblebrag slow-carb artisan. Put a bird on it tbh knausgaard godard. Chartreuse neutra paleo, fixie narwhal plaid vice air plant semiotics roof party leggings. Cardigan church-key chambray fashion axe vexillologist listicle artisan ugh umami YOLO salvia enamel pin. Fixie shaman celiac heirloom normcore whatever hell of ramps food truck. Gastropub street art slow-carb synth try-hard.
+GraphQL Code Generator is a CLI tool that can generate TypeScript typings out of a GraphQL schema. When we develop a GraphQL backend, there would be many instances where we would find ourselves writing the same things which are already described by the GraphQL schema, only in a different format; for example: resolver signatures, MongoDB models, Angular services etc.
 
-## more blogs
+https://graphql-code-generator.com/docs/getting-started/
 
-Leggings four loko hell of edison bulb shabby chic small batch lomo cloud bread dreamcatcher tofu shoreditch aesthetic beard retro. Craft beer knausgaard 8-bit yr, health goth disrupt vexillologist cred skateboard sustainable kombucha next level tacos. Wayfarers lo-fi tacos venmo vape meggings tbh polaroid. Raw denim selfies mustache godard. Roof party everyday carry brunch normcore.
+Will update this post once I have gotten some more experience with this.

@@ -33,3 +33,11 @@ export default async () => {
   return executableSchema;
 };
 ```
+
+At the time of writing this post, you may encounter this error when stitching multiple schemas together and running a query against the server:
+
+#### Error: Query root type must be provided
+
+This is a known issue https://github.com/prisma/graphql-import/issues/73.
+
+A workaround is to include a (dummy ) Query in each of the graphql schemas that you're stitching together.

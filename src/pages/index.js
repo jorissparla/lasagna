@@ -6,7 +6,10 @@ import Listing from '../components/listing';
 
 const IndexPage = ({ location }) => (
   <Layout location={location}>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="Home"
+      keywords={[`gatsby`, `application`, `react`, `graphql`, `typescript`]}
+    />
     <h1>Hi people</h1>
     <Listing />
   </Layout>

@@ -19,18 +19,28 @@ Generally, to create a remote schema, you need three steps:
 ```js
 import { HttpLink } from 'apollo-link-http';
 import fetch from 'node-fetch';
-
+// local schema
+import { resolvers } from './resolvers';
+const typeDefs = importSchema(path.join(__dirname, '/schema.graphql'));
+// remote schema
 const link = new HttpLink({ uri: 'http://api.githunt.com/graphql', fetch });
 
 export default async () => {
   const schema = await introspectSchema(link);
 
-  const executableSchema = makeRemoteExecutableSchema({
+  const remoteExecutableSchema = makeRemoteExecutableSchema({
     schema,
     link,
   });
 
-  return executableSchema;
+  const localExecutableSchema = makeExecutableSchema({ typeDefs, resolvers });
+  const finalSchema = mergeSchemas({
+    schemas: [localExecutableSchema, remoteExecutableSchema],
+  });
+  const server = new GraphQLServer({
+    schema: finalSchema,
+    context: {},
+  });
 };
 ```
 

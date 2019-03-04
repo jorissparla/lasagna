@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "alias": "blog.sparla.app",
   "name": "lasagna",
   "builds": [
     {

@@ -38,7 +38,7 @@
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "now-build": "gatsby build"
+    "now-build": "yarn install && gatsby build"
   },
   "devDependencies": {
     "prettier": "^1.16.4"

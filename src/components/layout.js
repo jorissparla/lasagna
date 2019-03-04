@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import { Spring } from 'react-spring';
+import { Spring } from 'react-spring/renderprops';
 import Header from './header';
 import './layout.css';
 import Archive from './archive';

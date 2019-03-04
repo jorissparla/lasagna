@@ -27,7 +27,7 @@ A special CSS @font-face declaration helps the various browsers select the appro
 }
 ```
 
-All you have to do is link to the stylesheet in your HTML, like this:
+_All_ you have to do is link to the stylesheet in your HTML, like this:
 
 ```javascript
 <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />

@@ -20,16 +20,21 @@ const Header = ({ siteTitle }) => (
   <HeaderWrapper>
     <HeaderContainer>
       <h1 style={{ margin: 0 }}>
-        <img style={{ width: '64px' }} src={sharkLogo} alt="avatar" />
         <Link
           to="/"
           style={{
             color: `white`,
             textDecoration: `none`,
           }}
+        />
+        <span
+          style={{
+            color: `white`,
+          }}
         >
           {siteTitle}
-        </Link>
+        </span>
+        <img style={{ width: '64px' }} src={sharkLogo} alt="avatar" />
       </h1>
     </HeaderContainer>
   </HeaderWrapper>
